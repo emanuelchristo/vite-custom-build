@@ -26,4 +26,16 @@
   - https://github.com/vitejs/vite/discussions/11386
   - Could use 'build.cssCodeSplitting: true' to get separate CSS files for each entry point
   - But plugin use to inject CSS to JS files is injecting CSS from one file to all the JS bundles
+  - https://github.com/vitejs/vite/issues/4863#issuecomment-1367775712 No way to give custom name to CSS chunks
+  - https://github.com/vitejs/vite/issues/4345
+  - https://github.com/vitejs/vite/issues/1579
+  - [SOLUTION] [EXPERIMENTAL] Using the vite-plugins-css-injected-by-js plugin. 'It has an experimental feature called relativeCssInjecton: true'
 
+- [FIND] [] https://github.com/jsonz1993/vite-plugin-load-css-module A plugin to extend vite's css module rules, not just ".module" suffix。
+
+VITE CSS INJECT PLUGINS
+- [FIND] [NOT WORKING] https://www.npmjs.com/package/vite-plugin-lib-inject-css
+- [FIND] [NOT WORKING] https://www.npmjs.com/package/vite-plugin-libcss Doesn't work
+- [FIND] [NOT WORKING] https://www.npmjs.com/package/@cxing/vitejs-plugin-inject-css
+- [FIND] [NOT WORKING] https://www.npmjs.com/package/@itsy/vite-css-inject
+- [FIND] [WORKS] https://www.npmjs.com/package/vite-plugin-css-injected-by-js

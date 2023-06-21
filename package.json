@@ -14,6 +14,8 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@cxing/vitejs-plugin-inject-css": "^0.0.2",
+		"@itsy/vite-css-inject": "^1.0.2",
 		"@rollup/plugin-node-resolve": "^15.1.0",
 		"@types/react": "^18.0.37",
 		"@types/react-dom": "^18.0.11",
@@ -29,7 +31,6 @@
 		"sass": "^1.63.4",
 		"typescript": "^5.0.2",
 		"vite": "^4.3.9",
-		"vite-plugin-css-injected-by-js": "^3.1.1",
-		"vite-plugin-singlefile": "^0.13.5"
+		"vite-plugin-css-injected-by-js": "^3.1.1"
 	}
 }
