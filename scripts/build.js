@@ -11,7 +11,6 @@ const BASE_PREVIEW_COMPONENT_PATH = '../src/components/previews/'
 import react from '@vitejs/plugin-react'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
-import InjectCSS from '@itsy/vite-css-inject'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 
@@ -29,7 +28,6 @@ async function runBuild() {
 				// 	return outputChunk.fileName.includes('index.js')
 				// },
 			}),
-			InjectCSS(),
 			react(),
 			nodeResolve(),
 		],

@@ -14,8 +14,6 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@cxing/vitejs-plugin-inject-css": "^0.0.2",
-		"@itsy/vite-css-inject": "^1.0.2",
 		"@rollup/plugin-node-resolve": "^15.1.0",
 		"@types/react": "^18.0.37",
 		"@types/react-dom": "^18.0.11",
