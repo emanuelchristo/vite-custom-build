@@ -24,4 +24,6 @@
 
 - [CHALLEGE #5] CSS of the entire build regardless of the entry point is compiled in to a single file (injected using plugin to js files)
   - https://github.com/vitejs/vite/discussions/11386
+  - Could use 'build.cssCodeSplitting: true' to get separate CSS files for each entry point
+  - But plugin use to inject CSS to JS files is injecting CSS from one file to all the JS bundles
 
