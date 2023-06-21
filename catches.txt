@@ -7,11 +7,13 @@
 - [LIMITATION] All static files getting inlined in the JS bundle regardless of size when using build.lib
   - "Assets will always be inlined, regardless of file size, and build.assetsInlineLimit will be ignored if you specify build.lib"
 
-- [SOLVED] Build generating js files with just imports or chunks that are empty
+- [LIMITATOIN] All static assets regardless of the entry point will be put in the same folder
+
+- [ISSUE] [SOLVED] Build generating js files with just imports or chunks that are empty
   - https://github.com/rollup/rollup/issues/3358
   - preserveEntrySignatures: 'allow-extension'
 
-- [ISSUE] Separate chunks created for shared modules when using multiple input files
+- [CHALLENGE #4] Separate chunks created for shared modules when using multiple input files
   - https://github.com/rollup/rollup/issues/2756
   - Issue raised in Rollup repo in 2019. Maintainer not interested in adding the feature to produce standalone bundles
   - Maintainer: " It is not possible to build several overlapping targets in the same build without code-splitting. One core principle in Rollup's architecture is at the moment that each module exists only once." (Mar 2019)
@@ -20,7 +22,6 @@
   -  manualChunks: () => "everything.js" (Not sure if it works)
   - Possible solution: Run build individually for each entry point. Limitation: High memory usage and long build times, especially when having a lot of files
 
-- [ISSUE] CSS of the entire build regardless of the entry point is compiled in to a single file (injected using plugin to js files)
+- [CHALLEGE #5] CSS of the entire build regardless of the entry point is compiled in to a single file (injected using plugin to js files)
   - https://github.com/vitejs/vite/discussions/11386
 
-- [NOTE] All static assets regardless of the entry point will be put in the same folder
