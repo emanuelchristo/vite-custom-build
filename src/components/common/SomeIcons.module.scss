@@ -1,0 +1,12 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+}
+
+.icon {
+	width: 72px;
+	height: 72px;
+	object-fit: contain;
+	object-position: center;
+}
